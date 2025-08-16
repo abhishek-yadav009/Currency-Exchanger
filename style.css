@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Title */
+.container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Amount */
+.amount {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.amount p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.amount input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.amount input:focus {
+  border-color: #2575fc;
+}
+
+/* Dropdowns */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.dropdown .from,
+.dropdown .to {
+  width: 48%;
+}
+
+.dropdown p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Select Container */
+.select-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: #fafafa;
+}
+
+.select-container img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.select-container select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Exchange Rate */
+.USD {
+  margin: 1rem 0;
+  padding: 10px;
+  background: #f1f5ff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2575fc;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d5edc;
+}
