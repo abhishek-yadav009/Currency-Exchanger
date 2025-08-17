@@ -8,7 +8,7 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-// 1️⃣ Fill dropdowns with currency options
+// 1️ Fill dropdowns with currency options
 for (let select of dropdowns) {
   for (let currCode in countryList) {
     let option = document.createElement("option"); // create new option
@@ -26,7 +26,7 @@ for (let select of dropdowns) {
   select.addEventListener("change", (evt) => updateFlag(evt.target));
 }
 
-// 2️⃣ Function to update flag image
+// 2️ Function to update flag image
 function updateFlag(element) {
   let currCode = element.value;               // get selected currency
   let countryCode = countryList[currCode];   // get country code
@@ -34,7 +34,7 @@ function updateFlag(element) {
   img.src = `https://flagsapi.com/${countryCode}/flat/64.png`; // update image
 }
 
-// 3️⃣ Convert button click event
+// 3️ Convert button click event
 btn.addEventListener("click", async (evt) => {
   evt.preventDefault(); // stop form from reloading
 
